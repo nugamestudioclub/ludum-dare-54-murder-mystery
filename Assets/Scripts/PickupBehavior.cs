@@ -10,5 +10,8 @@ public class PickupBehavior : MonoBehaviour
     {
         string question = evidence.GetQuestion();
         Debug.Log(question);
+
+        EvidenceManager.evidenceManager.Add(evidence);
+
     }
 }
