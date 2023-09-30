@@ -22,7 +22,6 @@ public class Interactable : MonoBehaviour
         if (isInRange && PlayerStateManager.stateManager.matches(PlayerState.FreeRoam))
         {
             if (Input.GetKeyDown(interactKey)) {
-                PlayerStateManager.stateManager.set(PlayerState.Dialogue);
                 interactAction.Invoke();
                 //textUI.SetActive(false);
             }

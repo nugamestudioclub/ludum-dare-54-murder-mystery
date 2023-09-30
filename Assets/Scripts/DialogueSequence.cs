@@ -60,6 +60,7 @@ public class DialogueSequence : MonoBehaviour
     }
 
     public void doSequence(string filename) {
+        PlayerStateManager.stateManager.set(PlayerState.Dialogue);
         dialoguePanel.SetActive(true);
         dialogueText.SetText("");
         TextAsset textAsset = (TextAsset) Resources.Load(filename);
