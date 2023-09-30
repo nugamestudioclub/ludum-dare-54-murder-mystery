@@ -350,7 +350,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0.000029498411, y: 0}
-  m_SizeDelta: {x: 0, y: 300}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &656868327
 MonoBehaviour:
@@ -365,7 +365,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_HorizontalFit: 1
-  m_VerticalFit: 0
+  m_VerticalFit: 1
 --- !u!114 &656868328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -515,7 +515,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 810400488}
         m_TargetAssemblyTypeName: PickupBehavior, Assembly-CSharp
-        m_MethodName: pickUp
+        m_MethodName: PickUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -559,7 +559,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 5.52
+  m_Radius: 2.95
 --- !u!212 &810400486
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -621,7 +621,7 @@ Transform:
   m_GameObject: {fileID: 810400483}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.57, y: 0.2, z: 0}
+  m_LocalPosition: {x: 7.57, y: 2.55, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -671,12 +671,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: {fileID: 1899002513}
-  isOpen: 0
   inventoryKey: 9
   inventoryContent: {fileID: 656868326}
   evidencePlaceHolder: {fileID: 6837711972804893007, guid: 69da4307e365a044d8e8d8d805418c6c, type: 3}
-  evidenceCollected:
-  - {fileID: 11400000, guid: 9b59c094557df3946bb14b9d1cab7aac, type: 2}
+  evidenceCollected: []
 --- !u!4 &1125857617
 Transform:
   m_ObjectHideFlags: 0
@@ -778,11 +776,11 @@ Transform:
   m_GameObject: {fileID: 1314300652}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.05737423, y: 0.048678793, z: -1.99}
-  m_LocalScale: {x: 0.22421524, y: 0.1980198, z: 1}
+  m_LocalPosition: {x: 3.5721228, y: -0.6839636, z: -1.99}
+  m_LocalScale: {x: 0.6726457, y: 0.5940594, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1738311760}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1388633050
 GameObject:
@@ -974,11 +972,10 @@ Transform:
   m_GameObject: {fileID: 1738311756}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.56, y: -0.55, z: 0}
+  m_LocalPosition: {x: 3.4, y: -0.83, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1314300655}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1738311761
@@ -1241,7 +1238,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f00b142aac4059c44aef5e17052acacc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  evidence: {fileID: 11400000, guid: 9b59c094557df3946bb14b9d1cab7aac, type: 2}
+  evidence: {fileID: 11400000, guid: 10b3e31fdbdbebf4ea62d7ddcfdacfb3, type: 2}
   interact: 1
 --- !u!114 &2138351386
 MonoBehaviour:
@@ -1262,7 +1259,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2138351385}
         m_TargetAssemblyTypeName: PickupBehavior, Assembly-CSharp
-        m_MethodName: pickUp
+        m_MethodName: PickUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1306,7 +1303,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 5.52
+  m_Radius: 2
 --- !u!212 &2138351388
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1378,6 +1375,7 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1314300655}
   - {fileID: 1738311760}
   - {fileID: 683651493}
   - {fileID: 810400487}

@@ -15,6 +15,7 @@ public class Interactable : MonoBehaviour
         if (isInRange)
         {
             if (Input.GetKeyDown(interactKey)) {
+                Debug.Log(EvidenceManager.isOpen);
                 interactAction.Invoke();
             }
         }

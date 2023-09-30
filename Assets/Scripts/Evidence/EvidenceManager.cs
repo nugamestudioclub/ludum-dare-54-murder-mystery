@@ -16,10 +16,13 @@ public class EvidenceManager : MonoBehaviour
 
     [SerializeField] private List<Evidence> evidenceCollected = new List<Evidence>();
 
+    private Evidence currentEvidence;
+
     private void Awake()
     {
         evidenceManager = this;
         inventory.SetActive(false);
+        isOpen = false;
     }
 
     private void Update()
@@ -70,6 +73,8 @@ public class EvidenceManager : MonoBehaviour
                 selectFirst = true;
             }
 
+            item.GetComponent<PickupBehavior>().evidence = evidence;
+
             var itemImage = item.transform.Find("Icon").GetComponent<Image>();
             if (evidence.itemSprite)
             {
@@ -77,4 +82,12 @@ public class EvidenceManager : MonoBehaviour
             }
         }
     }
+
+    private void GetQuestion()
+    {
+        Debug.Log(currentEvidence.GetQuestion());
+        
+    }
+
+    
 }
