@@ -4,14 +4,23 @@ using UnityEngine;
 
 public class PickupBehavior : MonoBehaviour
 {
-    [SerializeField] private Evidence evidence;
+    public Evidence evidence;
     [SerializeField] private bool interact = true;
 
-    public void pickUp()
+    public void PickUp()
     {
-        string question = evidence.GetQuestion();
-        Debug.Log(question);
+        if (interact && !EvidenceManager.isOpen)
+        {
+            interact = false;
+            string question = evidence.GetQuestion();
+            Debug.Log(question);
 
-        EvidenceManager.evidenceManager.Add(evidence);
+            EvidenceManager.evidenceManager.Add(evidence);
+        }
+    }
+
+    public void ReDisplayText()
+    {
+        Debug.Log(evidence.GetQuestion());
     }
 }
