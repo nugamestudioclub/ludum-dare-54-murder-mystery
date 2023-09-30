@@ -5,6 +5,7 @@ using UnityEngine;
 public class PickupBehavior : MonoBehaviour
 {
     [SerializeField] private Evidence evidence;
+    [SerializeField] private bool interact = true;
 
     public void pickUp()
     {
@@ -12,6 +13,5 @@ public class PickupBehavior : MonoBehaviour
         Debug.Log(question);
 
         EvidenceManager.evidenceManager.Add(evidence);
-
     }
 }

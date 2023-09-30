@@ -7,7 +7,7 @@ public class Evidence : ScriptableObject
 {
     [SerializeField] private int id;
     [SerializeField] private string itemName;
-    [SerializeField] private Sprite itemSprite;
+    public Sprite itemSprite;
     [SerializeField] private GameObject itemPrefab;
     [SerializeField] private string question;
 
@@ -15,5 +15,7 @@ public class Evidence : ScriptableObject
     {
         return question;
     }
+
+    
 }
  
