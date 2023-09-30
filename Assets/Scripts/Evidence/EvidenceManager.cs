@@ -29,22 +29,25 @@ public class EvidenceManager : MonoBehaviour
     {
         if (!isOpen)
         {
-            if (Input.GetKeyDown(inventoryKey))
+            if (PlayerStateManager.stateManager.matches(PlayerState.FreeRoam) && Input.GetKeyDown(inventoryKey))
             {
                 isOpen = true;
                 DisplayEvidence();
                 inventory.SetActive(true);
 
-                Time.timeScale = 0;
+                PlayerStateManager.stateManager.set(PlayerState.Inventory);
+                //Time.timeScale = 0;
             }
         }
         else
         {
-            if (Input.GetKeyDown(inventoryKey))
+            if (PlayerStateManager.stateManager.matches(PlayerState.Inventory) && Input.GetKeyDown(inventoryKey))
             {
                 isOpen = false;
                 inventory.SetActive(false);
-                Time.timeScale = 1;
+
+                PlayerStateManager.stateManager.set(PlayerState.FreeRoam);
+                //Time.timeScale = 1;
             }
         }
     }

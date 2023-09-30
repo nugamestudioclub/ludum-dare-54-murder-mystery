@@ -21,7 +21,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Move();
+        if (PlayerStateManager.stateManager.matches(PlayerState.FreeRoam)) {
+            Move();
+        } else {
+            rb.velocity = Vector2.zero;
+        }
     }
 
     private void ProcessInputs()

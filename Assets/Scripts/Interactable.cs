@@ -19,12 +19,12 @@ public class Interactable : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isInRange)
+        if (isInRange && PlayerStateManager.stateManager.matches(PlayerState.FreeRoam))
         {
             if (Input.GetKeyDown(interactKey)) {
+                PlayerStateManager.stateManager.set(PlayerState.Dialogue);
                 interactAction.Invoke();
-
-                textUI.SetActive(false);
+                //textUI.SetActive(false);
             }
         }
     }

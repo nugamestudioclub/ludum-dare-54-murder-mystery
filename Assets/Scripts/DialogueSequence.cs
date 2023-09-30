@@ -22,6 +22,8 @@ public class DialogueSequence : MonoBehaviour
     private string[] textLines;
     private int textIndex;
 
+    private bool activationFrame = false;
+
     private void Awake() {
         dialogue = this;
         dialoguePanel.SetActive(false);
@@ -29,15 +31,19 @@ public class DialogueSequence : MonoBehaviour
     }
 
     private void Update() {
-        if (dialoguePanel.activeSelf) {
-            if (Input.GetKeyDown(advanceDialogueKey)) {
-                if (textIndex < textLines.Length - 1) {
-                    textIndex += 1;
-                    updateDialogue();
-                } else {
-                    endDialogue();
+        if (!activationFrame) {
+            if (dialoguePanel.activeSelf) {
+                if (Input.GetKeyDown(advanceDialogueKey)) {
+                    if (textIndex < textLines.Length - 1) {
+                        textIndex += 1;
+                        updateDialogue();
+                    } else {
+                        endDialogue();
+                    }
                 }
             }
+        } else {
+            activationFrame = false;
         }
     }
 
@@ -50,6 +56,7 @@ public class DialogueSequence : MonoBehaviour
 
     private void endDialogue() {
         dialoguePanel.SetActive(false);
+        PlayerStateManager.stateManager.set(PlayerState.FreeRoam);
     }
 
     public void doSequence(string filename) {
@@ -60,5 +67,6 @@ public class DialogueSequence : MonoBehaviour
         textLines = textContent.Split('\n');
         textIndex = 0;
         updateDialogue();
+        activationFrame = true;
     }
 }
