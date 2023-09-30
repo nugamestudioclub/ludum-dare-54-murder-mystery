@@ -7,9 +7,9 @@ using TMPro;
 public class EvidenceManager : MonoBehaviour
 {
     public static EvidenceManager evidenceManager;
+    public static bool isOpen;
 
     [SerializeField] private GameObject inventory;
-    [SerializeField] private bool isOpen;
     [SerializeField] private KeyCode inventoryKey;
     [SerializeField] private Transform inventoryContent;
     [SerializeField] private GameObject evidencePlaceHolder;
@@ -31,6 +31,8 @@ public class EvidenceManager : MonoBehaviour
                 isOpen = true;
                 DisplayEvidence();
                 inventory.SetActive(true);
+
+                Time.timeScale = 0;
             }
         }
         else
@@ -39,6 +41,7 @@ public class EvidenceManager : MonoBehaviour
             {
                 isOpen = false;
                 inventory.SetActive(false);
+                Time.timeScale = 1;
             }
         }
     }

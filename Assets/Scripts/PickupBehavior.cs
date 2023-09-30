@@ -9,9 +9,13 @@ public class PickupBehavior : MonoBehaviour
 
     public void pickUp()
     {
-        string question = evidence.GetQuestion();
-        Debug.Log(question);
+        if (interact && !EvidenceManager.isOpen)
+        {
+            interact = false;
+            string question = evidence.GetQuestion();
+            Debug.Log(question);
 
-        EvidenceManager.evidenceManager.Add(evidence);
+            EvidenceManager.evidenceManager.Add(evidence);
+        }
     }
 }
