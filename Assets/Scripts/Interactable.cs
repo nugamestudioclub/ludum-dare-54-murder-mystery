@@ -2,12 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using TMPro;
 
 public class Interactable : MonoBehaviour
 {
     [SerializeField] private bool isInRange;
     [SerializeField] private KeyCode interactKey;
     [SerializeField] private UnityEvent interactAction;
+    [SerializeField] private GameObject textUI;
+
+    private void Start()
+    {
+        textUI.SetActive(false);
+    }
 
     // Update is called once per frame
     void Update()
@@ -15,16 +22,18 @@ public class Interactable : MonoBehaviour
         if (isInRange)
         {
             if (Input.GetKeyDown(interactKey)) {
-                Debug.Log(EvidenceManager.isOpen);
                 interactAction.Invoke();
+
+                textUI.SetActive(false);
             }
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            textUI.SetActive(true);
             isInRange = true;
         }
     }
@@ -34,6 +43,7 @@ public class Interactable : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             isInRange = false;
+            textUI.SetActive(false);
         }
     }
 }
