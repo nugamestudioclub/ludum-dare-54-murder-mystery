@@ -9,7 +9,16 @@ public class Evidence : ScriptableObject
     [SerializeField] private string itemName;
     public Sprite itemSprite;
     [SerializeField] private string question;
+
     [SerializeField] private bool hasCombo;
+    public bool createdCombo;
+    [SerializeField] private Evidence secondEvidence;
+    [SerializeField] private Evidence comboEvidence;
+
+    public Evidence GetComboEvidence()
+    {
+        return comboEvidence;
+    }
 
     public string GetQuestion()
     {

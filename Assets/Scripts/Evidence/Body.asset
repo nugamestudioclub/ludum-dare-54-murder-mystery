@@ -16,4 +16,5 @@ MonoBehaviour:
   itemName: Body
   itemSprite: {fileID: 21300000, guid: 02118d2930ef2004ab3e8284760d3c0c, type: 3}
   question: Is that the killer?
-  hasCombo: 0
+  hasCombo: 1
+  comboEvidence: {fileID: 11400000, guid: 90db327a0737ca14a87c53c470d6bc37, type: 2}

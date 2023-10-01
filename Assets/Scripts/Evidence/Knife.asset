@@ -16,3 +16,5 @@ MonoBehaviour:
   itemName: Knife
   itemSprite: {fileID: 0}
   question: Nice
+  hasCombo: 1
+  comboEvidence: {fileID: 11400000, guid: 90db327a0737ca14a87c53c470d6bc37, type: 2}

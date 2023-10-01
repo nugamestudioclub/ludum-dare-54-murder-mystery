@@ -15,15 +15,11 @@ public class EvidenceManager : MonoBehaviour
     [SerializeField] private GameObject evidencePlaceHolder;
 
     [SerializeField] private List<Evidence> evidenceCollected = new List<Evidence>();
+
+    // need to make sure these are initialized in the editor or this will not work
+    // also need to keep track of items position in the array
     [SerializeField] private List<Evidence> secondaryEvidence = new List<Evidence>();
     [SerializeField] private List<Evidence> comboEvidence = new List<Evidence>();
-
-    [SerializeField] private bool comboMode = false;
-
-    public bool comboCheckOne = false;
-    public bool comboCheckTwo = false;
-
-    private Evidence currentEvidence;
 
     private void Awake()
     {
@@ -48,11 +44,6 @@ public class EvidenceManager : MonoBehaviour
         }
         else
         {
-            if (comboMode)
-            {
-                comboCheckOne = true;
-            }
-
             if (PlayerStateManager.stateManager.matches(PlayerState.Inventory) && Input.GetKeyDown(inventoryKey))
             {
                 isOpen = false;
@@ -63,8 +54,6 @@ public class EvidenceManager : MonoBehaviour
             }
         }
     }
-
-    // if click on item -> click on wrong -> display message -> reset flag
 
     public void Add(Evidence evidence)
     {
@@ -95,7 +84,7 @@ public class EvidenceManager : MonoBehaviour
             itemEvidence.evidence = evidence;
             itemEvidence.hasCombo = itemEvidence.evidence.GetHasCombo();
 
-            if (itemEvidence.hasCombo && !itemEvidence.createdCombo)
+            if (itemEvidence.hasCombo)
             {
                 itemEvidence.createdCombo = true;
                 MakeCombo(itemEvidence);
@@ -111,42 +100,23 @@ public class EvidenceManager : MonoBehaviour
     }
 
     /* 
-     * 
+     * This is to link the items together to know what they are connected to
      */
-    private void MakeCombo(EvidenceComboBehavior combomaker)
+    private void MakeCombo(EvidenceComboBehavior comboMaker)
     {
-        switch(combomaker.evidence.GetItemName())
+        switch(comboMaker.evidence.GetItemName())
         {
             case "Knife":
-                combomaker.InitializeSecondEvidence(secondaryEvidence[0]); //body
-                combomaker.InitializeComboEvidence(comboEvidence[0]); //autospy report
+                comboMaker.InitializeSecondEvidence(secondaryEvidence[0]); //body
+                comboMaker.InitializeComboEvidence(comboEvidence[0]); //autospy report
                 break;
             case "Body":
-                combomaker.InitializeSecondEvidence(secondaryEvidence[1]); //knife
-                combomaker.InitializeComboEvidence(comboEvidence[0]); //autopsy report
+                comboMaker.InitializeSecondEvidence(secondaryEvidence[1]); //knife
+                comboMaker.InitializeComboEvidence(comboEvidence[0]); //autopsy report
                 break;
-
+            default:
+                break;
         }
-    }
-
-    public void changeComboOne()
-    {
-        comboCheckOne = !comboCheckOne;
-    }
-
-    public void changeComboTwo()
-    {
-        comboCheckTwo = !comboCheckTwo;
-    }
-
-    public void changeComboMode()
-    {
-        comboMode = !comboMode;
-    }
-
-    public bool GetComboMode()
-    {
-        return comboMode;
     }
 
     public List<Evidence> GetEvidenceList()

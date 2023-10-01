@@ -16,6 +16,8 @@ public class PickupBehavior : MonoBehaviour
             Debug.Log(question);
 
             EvidenceManager.evidenceManager.Add(evidence);
+            GetComponent<EvidenceComboBehavior>().hasCombo = evidence.GetHasCombo();
+            GetComponent<EvidenceComboBehavior>().Combo();
         }
     }
 }

@@ -21,12 +21,18 @@ public class EvidenceComboBehavior : MonoBehaviour
         {
             EvidenceManager evidenceManage = EvidenceManager.evidenceManager;
 
-            foreach (Evidence evidence in evidenceManage.GetEvidenceList())
+            List<Evidence> collectedEvidence = new List<Evidence>();
+
+            foreach (Evidence ev in collectedEvidence)
             {
-                if (secondEvidence.GetItemName() == evidence.GetItemName() && secondEvidence != null)
+                collectedEvidence.Add(ev);
+            }
+
+            foreach (Evidence ev in collectedEvidence)
+            {
+                if (secondEvidence.GetItemName() == ev.GetItemName() && secondEvidence != null)
                 {
-                    evidenceManage.changeComboMode();
-                    
+                    evidenceManage.Add(comboEvidence);
                 }
             }
         }
