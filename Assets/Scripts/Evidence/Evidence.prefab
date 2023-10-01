@@ -88,6 +88,7 @@ GameObject:
   - component: {fileID: 2703954474627401946}
   - component: {fileID: 2609651886950668538}
   - component: {fileID: -6429887832680623245}
+  - component: {fileID: -8002851531702134850}
   m_Layer: 5
   m_Name: Evidence
   m_TagString: Untagged
@@ -197,9 +198,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: -6429887832680623245}
-        m_TargetAssemblyTypeName: PickupBehavior, Assembly-CSharp
-        m_MethodName: ReDisplayText
+      - m_Target: {fileID: -8002851531702134850}
+        m_TargetAssemblyTypeName: EvidenceComboBehavior, Assembly-CSharp
+        m_MethodName: DisplayText
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -223,3 +224,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   evidence: {fileID: 0}
   interact: 1
+--- !u!114 &-8002851531702134850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6837711972804893007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b1e4cc6613061542a8a35751aa9ea36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  evidence: {fileID: 0}

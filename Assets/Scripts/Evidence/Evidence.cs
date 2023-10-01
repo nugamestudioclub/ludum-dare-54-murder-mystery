@@ -8,7 +8,6 @@ public class Evidence : ScriptableObject
     [SerializeField] private int id;
     [SerializeField] private string itemName;
     public Sprite itemSprite;
-    [SerializeField] private GameObject itemPrefab;
     [SerializeField] private string question;
 
     public string GetQuestion()
@@ -16,6 +15,10 @@ public class Evidence : ScriptableObject
         return question;
     }
 
+    public string GetItemName()
+    {
+        return itemName;
+    }
     
 }
  

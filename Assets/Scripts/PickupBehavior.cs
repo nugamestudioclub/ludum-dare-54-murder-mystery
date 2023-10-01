@@ -18,9 +18,4 @@ public class PickupBehavior : MonoBehaviour
             EvidenceManager.evidenceManager.Add(evidence);
         }
     }
-
-    public void ReDisplayText()
-    {
-        Debug.Log(evidence.GetQuestion());
-    }
 }
