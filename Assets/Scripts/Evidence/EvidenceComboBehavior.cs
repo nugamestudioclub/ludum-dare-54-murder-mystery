@@ -5,7 +5,8 @@ using UnityEngine;
 public class EvidenceComboBehavior : MonoBehaviour
 {
     public Evidence evidence;
-    [SerializeField] private bool hasCombo;
+    public bool hasCombo;
+    public bool createdCombo = false;
     [SerializeField] private Evidence secondEvidence;
     [SerializeField] private Evidence comboEvidence;
 
@@ -16,14 +17,28 @@ public class EvidenceComboBehavior : MonoBehaviour
 
     public void Combo()
     {
-        foreach(Evidence evidence in EvidenceManager.evidenceManager.GetEvidenceList())
+        if (hasCombo)
         {
-            if (secondEvidence.GetItemName() == evidence.GetItemName())
-            {
-                EvidenceManager.evidenceManager.Add(comboEvidence);
+            EvidenceManager evidenceManage = EvidenceManager.evidenceManager;
 
-                //We can add a display a new text here.
+            foreach (Evidence evidence in evidenceManage.GetEvidenceList())
+            {
+                if (secondEvidence.GetItemName() == evidence.GetItemName() && secondEvidence != null)
+                {
+                    evidenceManage.changeComboMode();
+                    
+                }
             }
         }
+    }
+
+    public void InitializeComboEvidence(Evidence evidence)
+    {
+        comboEvidence = evidence;
+    }
+
+    public void InitializeSecondEvidence(Evidence evidence)
+    {
+        secondEvidence = evidence;
     }
 }

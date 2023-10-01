@@ -210,6 +210,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 6837711972804893007}
+        m_TargetAssemblyTypeName: EvidenceComboBehavior, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: -8002851531702134850}
+        m_TargetAssemblyTypeName: EvidenceComboBehavior, Assembly-CSharp
+        m_MethodName: Combo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &-6429887832680623245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -237,3 +261,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   evidence: {fileID: 0}
+  hasCombo: 0
+  createdCombo: 0
+  secondEvidence: {fileID: 0}
+  comboEvidence: {fileID: 0}

@@ -889,8 +889,9 @@ GameObject:
   - component: {fileID: 810400485}
   - component: {fileID: 810400484}
   - component: {fileID: 810400488}
+  - component: {fileID: 810400489}
   m_Layer: 0
-  m_Name: Circle
+  m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1001,7 +1002,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -1042,6 +1043,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   evidence: {fileID: 11400000, guid: 9b59c094557df3946bb14b9d1cab7aac, type: 2}
   interact: 1
+--- !u!114 &810400489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 810400483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b1e4cc6613061542a8a35751aa9ea36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  evidence: {fileID: 0}
+  hasCombo: 1
+  createdCombo: 0
+  secondEvidence: {fileID: 11400000, guid: 10b3e31fdbdbebf4ea62d7ddcfdacfb3, type: 2}
+  comboEvidence: {fileID: 11400000, guid: 90db327a0737ca14a87c53c470d6bc37, type: 2}
 --- !u!1 &1125857615
 GameObject:
   m_ObjectHideFlags: 0
@@ -1076,6 +1094,11 @@ MonoBehaviour:
   inventoryContent: {fileID: 656868326}
   evidencePlaceHolder: {fileID: 6837711972804893007, guid: 69da4307e365a044d8e8d8d805418c6c, type: 3}
   evidenceCollected: []
+  secondaryEvidence:
+  - {fileID: 11400000, guid: 9b59c094557df3946bb14b9d1cab7aac, type: 2}
+  - {fileID: 11400000, guid: 10b3e31fdbdbebf4ea62d7ddcfdacfb3, type: 2}
+  comboEvidence:
+  - {fileID: 11400000, guid: 90db327a0737ca14a87c53c470d6bc37, type: 2}
 --- !u!4 &1125857617
 Transform:
   m_ObjectHideFlags: 0
@@ -1833,8 +1856,9 @@ GameObject:
   - component: {fileID: 2138351387}
   - component: {fileID: 2138351386}
   - component: {fileID: 2138351385}
+  - component: {fileID: 2138351390}
   m_Layer: 0
-  m_Name: Circle (1)
+  m_Name: Knife
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1959,7 +1983,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -1986,6 +2010,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2138351390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138351384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b1e4cc6613061542a8a35751aa9ea36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  evidence: {fileID: 0}
+  hasCombo: 1
+  createdCombo: 0
+  secondEvidence: {fileID: 11400000, guid: 9b59c094557df3946bb14b9d1cab7aac, type: 2}
+  comboEvidence: {fileID: 11400000, guid: 90db327a0737ca14a87c53c470d6bc37, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

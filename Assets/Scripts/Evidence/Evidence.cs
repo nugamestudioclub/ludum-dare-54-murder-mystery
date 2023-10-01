@@ -9,6 +9,7 @@ public class Evidence : ScriptableObject
     [SerializeField] private string itemName;
     public Sprite itemSprite;
     [SerializeField] private string question;
+    [SerializeField] private bool hasCombo;
 
     public string GetQuestion()
     {
@@ -18,6 +19,11 @@ public class Evidence : ScriptableObject
     public string GetItemName()
     {
         return itemName;
+    }
+
+    public bool GetHasCombo()
+    {
+        return hasCombo;
     }
     
 }

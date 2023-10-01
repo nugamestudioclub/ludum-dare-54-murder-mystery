@@ -15,6 +15,13 @@ public class EvidenceManager : MonoBehaviour
     [SerializeField] private GameObject evidencePlaceHolder;
 
     [SerializeField] private List<Evidence> evidenceCollected = new List<Evidence>();
+    [SerializeField] private List<Evidence> secondaryEvidence = new List<Evidence>();
+    [SerializeField] private List<Evidence> comboEvidence = new List<Evidence>();
+
+    [SerializeField] private bool comboMode = false;
+
+    public bool comboCheckOne = false;
+    public bool comboCheckTwo = false;
 
     private Evidence currentEvidence;
 
@@ -41,6 +48,11 @@ public class EvidenceManager : MonoBehaviour
         }
         else
         {
+            if (comboMode)
+            {
+                comboCheckOne = true;
+            }
+
             if (PlayerStateManager.stateManager.matches(PlayerState.Inventory) && Input.GetKeyDown(inventoryKey))
             {
                 isOpen = false;
@@ -52,12 +64,14 @@ public class EvidenceManager : MonoBehaviour
         }
     }
 
+    // if click on item -> click on wrong -> display message -> reset flag
+
     public void Add(Evidence evidence)
     {
         evidenceCollected.Add(evidence);
     }
 
-    private void DisplayEvidence()
+    public void DisplayEvidence()
     {
         foreach(Transform item in inventoryContent)
         {
@@ -76,7 +90,17 @@ public class EvidenceManager : MonoBehaviour
                 selectFirst = true;
             }
 
-            item.GetComponent<EvidenceComboBehavior>().evidence = evidence;
+            EvidenceComboBehavior itemEvidence = item.GetComponent<EvidenceComboBehavior>();
+
+            itemEvidence.evidence = evidence;
+            itemEvidence.hasCombo = itemEvidence.evidence.GetHasCombo();
+
+            if (itemEvidence.hasCombo && !itemEvidence.createdCombo)
+            {
+                itemEvidence.createdCombo = true;
+                MakeCombo(itemEvidence);
+            }
+
 
             var itemImage = item.transform.Find("Icon").GetComponent<Image>();
             if (evidence.itemSprite)
@@ -86,10 +110,57 @@ public class EvidenceManager : MonoBehaviour
         }
     }
 
+    /* 
+     * 
+     */
+    private void MakeCombo(EvidenceComboBehavior combomaker)
+    {
+        switch(combomaker.evidence.GetItemName())
+        {
+            case "Knife":
+                combomaker.InitializeSecondEvidence(secondaryEvidence[0]); //body
+                combomaker.InitializeComboEvidence(comboEvidence[0]); //autospy report
+                break;
+            case "Body":
+                combomaker.InitializeSecondEvidence(secondaryEvidence[1]); //knife
+                combomaker.InitializeComboEvidence(comboEvidence[0]); //autopsy report
+                break;
+
+        }
+    }
+
+    public void changeComboOne()
+    {
+        comboCheckOne = !comboCheckOne;
+    }
+
+    public void changeComboTwo()
+    {
+        comboCheckTwo = !comboCheckTwo;
+    }
+
+    public void changeComboMode()
+    {
+        comboMode = !comboMode;
+    }
+
+    public bool GetComboMode()
+    {
+        return comboMode;
+    }
+
     public List<Evidence> GetEvidenceList()
     {
         return evidenceCollected;
     }
 
-    
+    public GameObject GetPlaceHolder()
+    {
+        return evidencePlaceHolder;
+    }
+
+    public Transform GetListUI()
+    {
+        return inventoryContent;
+    }
 }
