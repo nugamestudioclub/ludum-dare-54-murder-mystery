@@ -9,11 +9,6 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector2 moveDirection;
 
-    private void Start()
-    {
-        moveSpeed = 5;
-    }
-
     private void Update()
     {
         ProcessInputs();
