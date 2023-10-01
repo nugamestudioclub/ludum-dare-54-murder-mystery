@@ -12,8 +12,8 @@ public class PickupBehavior : MonoBehaviour
         if (interact && !EvidenceManager.isOpen)
         {
             interact = false;
-            string question = evidence.GetQuestion();
-            Debug.Log(question);
+            //string question = evidence.GetQuestion();
+            //Debug.Log(question);
 
             EvidenceManager.evidenceManager.Add(evidence);
         }
@@ -21,6 +21,6 @@ public class PickupBehavior : MonoBehaviour
 
     public void ReDisplayText()
     {
-        Debug.Log(evidence.GetQuestion());
+        //Debug.Log(evidence.GetQuestion());
     }
 }

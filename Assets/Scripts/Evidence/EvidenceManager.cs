@@ -76,7 +76,9 @@ public class EvidenceManager : MonoBehaviour
                 selectFirst = true;
             }
 
-            item.GetComponent<PickupBehavior>().evidence = evidence;
+            //item.GetComponent<PickupBehavior>().evidence = evidence;
+
+            item.GetComponent<DialogueBehavior>().setFilename(evidence.getExamineFilename());
 
             var itemImage = item.transform.Find("Icon").GetComponent<Image>();
             if (evidence.itemSprite)
@@ -88,9 +90,6 @@ public class EvidenceManager : MonoBehaviour
 
     private void GetQuestion()
     {
-        Debug.Log(currentEvidence.GetQuestion());
-        
+       // Debug.Log(currentEvidence.GetQuestion());
     }
-
-    
 }

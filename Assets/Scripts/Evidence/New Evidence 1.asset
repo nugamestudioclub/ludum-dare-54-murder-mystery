@@ -12,8 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2167e350df773c9438d2a1a03ea16b56, type: 3}
   m_Name: New Evidence 1
   m_EditorClassIdentifier: 
-  id: 0
-  itemName: 
-  itemSprite: {fileID: 0}
-  itemPrefab: {fileID: 0}
-  question: Nice
+  itemName: Family Photo
+  itemSprite: {fileID: 21300000, guid: ea16d98352cd842a3b1069b1d69f22bd, type: 3}
+  itemExamineFilename: photoExamination

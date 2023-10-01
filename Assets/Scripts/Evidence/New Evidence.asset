@@ -12,8 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2167e350df773c9438d2a1a03ea16b56, type: 3}
   m_Name: New Evidence
   m_EditorClassIdentifier: 
-  id: 0
-  itemName: 
-  itemSprite: {fileID: 21300000, guid: 02118d2930ef2004ab3e8284760d3c0c, type: 3}
-  itemPrefab: {fileID: 0}
-  question: Is that the killer?
+  itemName: Bloody Knife
+  itemSprite: {fileID: 21300000, guid: 63e3b63b6f5924e0390814c96e6b0f8f, type: 3}
+  itemExamineFilename: knifeExamination

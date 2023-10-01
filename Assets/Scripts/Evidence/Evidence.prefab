@@ -35,7 +35,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 50, y: 50}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5561685189439986867
 CanvasRenderer:
@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 298238423044115817}
   - component: {fileID: 2703954474627401946}
   - component: {fileID: 2609651886950668538}
-  - component: {fileID: -6429887832680623245}
+  - component: {fileID: 1993118571223623587}
   m_Layer: 5
   m_Name: Evidence
   m_TagString: Untagged
@@ -197,9 +197,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: -6429887832680623245}
-        m_TargetAssemblyTypeName: PickupBehavior, Assembly-CSharp
-        m_MethodName: ReDisplayText
+      - m_Target: {fileID: 1993118571223623587}
+        m_TargetAssemblyTypeName: DialogueBehavior, Assembly-CSharp
+        m_MethodName: doDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -209,7 +209,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &-6429887832680623245
+--- !u!114 &1993118571223623587
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -218,8 +218,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6837711972804893007}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f00b142aac4059c44aef5e17052acacc, type: 3}
+  m_Script: {fileID: 11500000, guid: d150c9522a6e74d54802639835bb608b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  evidence: {fileID: 0}
-  interact: 1
+  filename: 
+  postDialogueAction:
+    m_PersistentCalls:
+      m_Calls: []

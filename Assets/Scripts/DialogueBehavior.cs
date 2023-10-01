@@ -11,9 +11,15 @@ public class DialogueBehavior : MonoBehaviour
     private UnityEvent postDialogueAction;
 
     public void doDialogue() {
-        DialogueSequence.dialogue.doSequence(filename);
-        if (postDialogueAction != null) {
-            postDialogueAction.Invoke();
+        if (!PlayerStateManager.stateManager.matches(PlayerState.Dialogue)) {
+            DialogueSequence.dialogue.doSequence(filename);
+            if (postDialogueAction != null) {
+                postDialogueAction.Invoke();
+            }
         }
+    }
+
+    public void setFilename(string name) {
+        this.filename = name;
     }
 }
