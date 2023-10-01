@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraBehavior : MonoBehaviour
 {
-    [SerializeField] private List<Transform> centralPoints = new List<Transform>();
+    [SerializeField] private List<Transform> centralPoints;
     [SerializeField] private GameObject player;
     [SerializeField] private List<int> cameraSize = new List<int>();
 
@@ -13,7 +13,9 @@ public class CameraBehavior : MonoBehaviour
     // 2 is dining room
     public void changeCamera(int location)
     {
+        Camera.main.transform.position = centralPoints[location].position;
 
+        /*
         Vector3 cameraLocation = Camera.main.transform.position;
         switch (location)
         {
@@ -27,5 +29,6 @@ public class CameraBehavior : MonoBehaviour
                 Camera.main.transform.position = new Vector3(centralPoints[2].position.x, centralPoints[2].position.y, cameraLocation.z);
                 break;
         }
+        */
     }
 }
