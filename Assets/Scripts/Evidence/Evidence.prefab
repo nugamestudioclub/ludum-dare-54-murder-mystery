@@ -87,7 +87,8 @@ GameObject:
   - component: {fileID: 298238423044115817}
   - component: {fileID: 2703954474627401946}
   - component: {fileID: 2609651886950668538}
-  - component: {fileID: 1993118571223623587}
+  - component: {fileID: 6801602819293951018}
+  - component: {fileID: -4619056328386025886}
   m_Layer: 5
   m_Name: Evidence
   m_TagString: Untagged
@@ -197,9 +198,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1993118571223623587}
-        m_TargetAssemblyTypeName: DialogueBehavior, Assembly-CSharp
-        m_MethodName: doDialogue
+      - m_Target: {fileID: 6801602819293951018}
+        m_TargetAssemblyTypeName: EvidenceButtonController, Assembly-CSharp
+        m_MethodName: buttonHit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -209,7 +210,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1993118571223623587
+--- !u!114 &6801602819293951018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6837711972804893007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad23fc5d502fd46d6a1bd3cf3ff21429, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: {fileID: -4619056328386025886}
+--- !u!114 &-4619056328386025886
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

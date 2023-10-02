@@ -16,13 +16,15 @@ public class EvidenceManager : MonoBehaviour
 
     [SerializeField] private List<Evidence> evidenceCollected = new List<Evidence>();
 
-    private Evidence currentEvidence;
+    //private Evidence currentEvidence;
+    private List<string> itemNamesSelected;
 
     private void Awake()
     {
         evidenceManager = this;
         inventory.SetActive(false);
         isOpen = false;
+        itemNamesSelected = new List<string>();
     }
 
     private void Update()
@@ -46,7 +48,11 @@ public class EvidenceManager : MonoBehaviour
                 isOpen = false;
                 inventory.SetActive(false);
 
+                itemNamesSelected = new List<string>();
+
                 PlayerStateManager.stateManager.set(PlayerState.FreeRoam);
+
+
                 //Time.timeScale = 1;
             }
         }
@@ -78,7 +84,8 @@ public class EvidenceManager : MonoBehaviour
 
             //item.GetComponent<PickupBehavior>().evidence = evidence;
 
-            item.GetComponent<DialogueBehavior>().setFilename(evidence.getExamineFilename());
+            //item.GetComponent<DialogueBehavior>().setFilename(evidence.getExamineFilename());
+            item.GetComponent<EvidenceButtonController>().setEvidence(evidence);
 
             var itemImage = item.transform.Find("Icon").GetComponent<Image>();
             if (evidence.itemSprite)
@@ -86,6 +93,49 @@ public class EvidenceManager : MonoBehaviour
                 itemImage.sprite = evidence.itemSprite;
             }
         }
+    }
+
+    public void selectEvidence(string targetName) {
+        if (itemNamesSelected.Contains(targetName)) {
+            this.deselectIcon(targetName);
+        } else if (itemNamesSelected.Count > 1) {
+            this.deselectIcon(itemNamesSelected[0]);
+            this.selectIcon(targetName);
+        } else {
+            this.selectIcon(targetName);
+        }
+    }
+
+    public void deselectAllEvidence() {
+        string[] currentNames = new string[2];
+        itemNamesSelected.CopyTo(currentNames);
+        foreach (string name in currentNames) {
+            this.deselectIcon(name);
+        }
+    }
+
+    private void deselectIcon(string targetName) {
+        foreach (Transform evidenceObject in inventoryContent) {
+            if (evidenceObject.gameObject.GetComponent<EvidenceButtonController>().hasName(targetName)) {
+                evidenceObject.gameObject.GetComponent<Image>().color = Color.white;
+                itemNamesSelected.Remove(targetName);
+                break;
+            }
+        }
+    }
+
+    private void selectIcon(string targetName) {
+        foreach (Transform evidenceObject in inventoryContent) {
+            if (evidenceObject.gameObject.GetComponent<EvidenceButtonController>().hasName(targetName)) {
+                evidenceObject.gameObject.GetComponent<Image>().color = Color.blue;
+                itemNamesSelected.Add(targetName);
+                break;
+            }
+        }
+    }
+
+    public bool twoItemsSelected() {
+        return itemNamesSelected.Count == 2;
     }
 
     private void GetQuestion()
