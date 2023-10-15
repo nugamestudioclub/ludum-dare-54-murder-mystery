@@ -1,0 +1,2 @@
+Detective: “What’s this? An old family photo? Huh. There’s the parents… and two siblings. Wait. Aren’t there three children?”
+ : [Family Photo added to evidence]

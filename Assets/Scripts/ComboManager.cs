@@ -35,7 +35,8 @@ public class ComboManager : MonoBehaviour
                 comboState = ComboState.Dormant;
                 EvidenceManager.evidenceManager.deselectAllEvidence();
             } else {
-                Debug.Log("combine action");
+                EvidenceManager.evidenceManager.combineSelectedEvidence();
+                this.resetCombine();
             }
         }
     }
@@ -48,6 +49,12 @@ public class ComboManager : MonoBehaviour
     public void cancelCombineReady() {
         selectButton.transform.GetChild(0).gameObject.GetComponent<TMP_Text>().SetText("Select");
         comboState = ComboState.Select;
+    }
+
+    public void resetCombine() {
+        selectButton.GetComponent<Image>().color = Color.white;
+        selectButton.transform.GetChild(0).gameObject.GetComponent<TMP_Text>().SetText("Select");
+        comboState = ComboState.Dormant;
     }
 
     public bool matches(ComboState state) {

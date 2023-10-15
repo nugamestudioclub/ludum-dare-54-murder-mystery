@@ -14,6 +14,7 @@ public class DialogueBehavior : MonoBehaviour
         if (!PlayerStateManager.stateManager.matches(PlayerState.Dialogue)) {
             DialogueSequence.dialogue.doSequence(filename);
             if (postDialogueAction != null) {
+                Debug.Log("post dialogue action done");
                 postDialogueAction.Invoke();
             }
         }

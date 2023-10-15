@@ -18,6 +18,9 @@ public class EvidenceManager : MonoBehaviour
 
     //private Evidence currentEvidence;
     private List<string> itemNamesSelected;
+    [SerializeField] private ComboSet comboSet;
+    [SerializeField] private string incorrectComboFilename;
+    [SerializeField] private string expendedComboFilename;
 
     private void Awake()
     {
@@ -46,12 +49,13 @@ public class EvidenceManager : MonoBehaviour
             if (PlayerStateManager.stateManager.matches(PlayerState.Inventory) && Input.GetKeyDown(inventoryKey))
             {
                 isOpen = false;
+
+                ComboManager.manager.resetCombine();
                 inventory.SetActive(false);
 
                 itemNamesSelected = new List<string>();
 
                 PlayerStateManager.stateManager.set(PlayerState.FreeRoam);
-
 
                 //Time.timeScale = 1;
             }
@@ -136,6 +140,24 @@ public class EvidenceManager : MonoBehaviour
 
     public bool twoItemsSelected() {
         return itemNamesSelected.Count == 2;
+    }
+
+    public void combineSelectedEvidence() {
+
+        if (comboSet.hasCombo(itemNamesSelected[0], itemNamesSelected[1])) {
+            if (!comboSet.expendedCombo(itemNamesSelected[0], itemNamesSelected[1])) {
+                DialogueSequence.dialogue.doSequence(comboSet.getComboDesc(itemNamesSelected[0], itemNamesSelected[1]));
+                comboSet.expendCombo(itemNamesSelected[0], itemNamesSelected[1]);
+                this.Add(comboSet.getComboEvidence(itemNamesSelected[0], itemNamesSelected[1]));
+                this.DisplayEvidence();
+            } else {
+                DialogueSequence.dialogue.doSequence(expendedComboFilename);
+            }
+        } else {
+            DialogueSequence.dialogue.doSequence(incorrectComboFilename);
+        }
+
+        this.deselectAllEvidence();
     }
 
     private void GetQuestion()

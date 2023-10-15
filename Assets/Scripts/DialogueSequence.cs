@@ -23,6 +23,7 @@ public class DialogueSequence : MonoBehaviour
     private int textIndex;
 
     private bool activationFrame = false;
+    private bool deactivationFrame = false;
     private PlayerState originState;
 
     private void Awake() {
@@ -32,6 +33,11 @@ public class DialogueSequence : MonoBehaviour
     }
 
     private void Update() {
+        if (deactivationFrame) {
+            PlayerStateManager.stateManager.set(this.originState);
+            deactivationFrame = false;
+        }
+        
         if (!activationFrame) {
             if (dialoguePanel.activeSelf) {
                 if (Input.GetKeyDown(advanceDialogueKey)) {
@@ -57,7 +63,7 @@ public class DialogueSequence : MonoBehaviour
 
     private void endDialogue() {
         dialoguePanel.SetActive(false);
-        PlayerStateManager.stateManager.set(this.originState);
+        deactivationFrame = true;
     }
 
     public void doSequence(string filename) {
