@@ -1,0 +1,3 @@
+Dispatcher: "911, what's your emergency?"
+???: "Oh god, help! My cousin, she's not moving!"
+Dispatcher: "Please remain calm. What is your address?"

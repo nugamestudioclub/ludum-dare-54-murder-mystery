@@ -1,0 +1,18 @@
+Detective: “Chef, it seems as if you met with the victim at 8:00 rather than taking a break. Of course, we can pretend that you simply didn’t follow through, but you still need to provide a reason why you sent the text.”
+Chef: “...”
+Detective: “Chef?”
+Chef: “It’s probably best to put this in the open rather than make me more suspicious. Do you know that the victim was adopted?”
+Detective: “Yes, I’m aware.”
+Chef: “Well, I’m her father. Her biological one. After checking the adoption records, I found she was here, and so I initially just worked here, just to be around her sometimes. But I decided one day to talk to her about it.”
+Chef: “It went worse than I imagined. She wouldn’t even acknowledge me, saying that if I really wanted her in my life, I should’ve taken better care of her, or even interacted with her earlier." 
+Chef: "I understand, I really do, but you probably understand why I got so angry.”
+Detective: “What exactly did you do with that anger?”
+Chef: “...nothing. I couldn’t yell or hit my daughter, not knowing she was right to an extent. I came back to the kitchen and clocked back in."
+Chef: "The job isn’t hourly, but hours are still clocked. You can see the timestamp."
+Detective: “(Let's see...) Indeed, that does say 8:23.”
+Detective: “(That’s before the murder occurred. If what the Eldest sibling said was true, that means the Chef was busy during the time of the murder.)”
+Detective: “One last thing. Could you show me your recent monetary transactions?”
+Chef: “Isn’t this a violation of privacy?”
+Detective: “Look. This could potentially help prove who killed your daughter.”
+Chef: “...sure.”
+Detective: “(No large changes in balance.)”

@@ -1,0 +1,7 @@
+Detective: “Is there a reason you lied about being in the kitchen before dinner?”
+Butler: “I don’t believe I lied..."
+Detective: “The chef claims you weren’t there, and I know for a fact he’s telling the truth.”
+Detective: “(I can’t actually prove the chef is telling the truth, but let’s see if a little bluff will open things up.)”
+Butler: “Well, it’s true I met up with the victim before dinner. But not after! So there's no reason for it to have to do with the murder.”
+Detective: “(He met up with the victim? Dinner usually happens around 7:00 PM. What could have happened before then?)”
+ : [Butler’s Testimony updated]

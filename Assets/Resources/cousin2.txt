@@ -1,0 +1,5 @@
+Detective: “It seems you can’t be the culprit, though I assume you already know that.”
+Cousin: “Does that mean I can go now?”
+Detective: “Yes. If I need you again, I will call you back. One last thing, though. Do you know where your cousins are?”
+Cousin: “Oh, they should be over in the dining room. That’s where I last saw them.”
+Detective: “Thanks.”

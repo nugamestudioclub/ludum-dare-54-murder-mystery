@@ -1,0 +1,14 @@
+Detective: “Hello, you must be the brother of the victim?”
+Middle Sibling: “...Yes, that’s me...”
+Detective: “(Looks like he’s been crying.) Where were you at the time of the murder?”
+Middle Sibling: “Well, after how crazy the whole will thing turned out, I left to talk to my older sister about it." 
+Middle Sibling: "I was pretty angry, and even though my sister wasn't emotional, it seemed she wasn’t happy either. That was probably around 6:00 or so? Then we ate dinner.
+Middle Sibling: "Afterwards, I helped the butler clean the dining hall a little, because I felt bad.”
+Detective: “How so?”
+Middle Sibling: “Well, we got into an argument about the will. Both my older sister and I insisted that we take the money for safekeeping, but our little sister insisted on having it. We ended up breaking a plate or two, so I went to help, even if I wasn’t that useful.
+Detective: “How conscientious.”
+Middle Sibling: “After that, I spent the rest of my time with my sister. The living one, sadly.”
+Detective: “One second. Earlier, you mentioned a butler.”
+Middle Sibling: “Yes, we do have a butler. He’s been with us for a long time, so he’s used to our disputes.”
+Detective: “(The butler and chef, huh... I guess I could ask them for some testimony.)”
+ : [Middle’s Testimony added to evidence]

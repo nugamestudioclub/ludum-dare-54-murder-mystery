@@ -1,0 +1,6 @@
+Detective: “Hello, I heard that you are the butler of this manor.”
+Butler: “Why, yes! I’m terribly sorry about the state of our manor at the moment. It’s been a long night...”
+Detective: “I would imagine so. Do you have any knowledge that might be helpful to this investigation?”
+Butler: “Hm, I can’t say I noticed anything. I was helping the chef until dinner, where I was there for one of the family’s arguments in the dining room. I spent the rest of the time there cleaning.”
+ : [Butler’s Testimony added to evidence]
+

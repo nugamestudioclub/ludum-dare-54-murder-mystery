@@ -1,0 +1,15 @@
+Detective: “I’ve found a problem with your testimony.”
+Eldest Sibling: “And what is that exactly?
+Detective: “Both the butler and the middle sibling cleaned up after dinner in the dining room, but you claim to have talked to the middle sibling during this time.”
+Eldest Sibling: “What?”
+Detective: “On top of that, the butler has been blackmailing your youngest sibling for money.”
+Eldest Sibling: “Oh, I knew that.”
+Detective: “What?”
+Eldest Sibling: “Hm?”
+Detective: “Please explain. Now.”
+Eldest Sibling: “I’ve known about this for a while. We all care about the butler, and honestly, it served as a good reminder to our youngest sister that she needed to fix her life. It added another layer of guilt, which, while somewhat harsh, was the only thing that worked at the time."
+Eldest Sibling: "That said, I also realized that once the inheritance went primarily to my sister, the butler was going to be fired. I met with him around 8:30 to discuss potential future employment under myself.”
+Detective: “You met with the butler at 8:30? Might I take this as part of your testimony?”
+Eldest Sibling: “Well, I suppose if it’s necessary. I don’t exactly want to tell a detective that my beloved butler was involved in another crime, you must understand. You can talk to him again to prove my point.”
+ : [Eldest Sibling Testimony updated]
+

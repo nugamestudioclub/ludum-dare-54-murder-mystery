@@ -1,0 +1,5 @@
+Detective: “So this is where the victim was.”
+ : [Body Outline added to evidence]
+Detective: “Huh? It looks like there’s something left behind.”
+Detective: “Oh, it’s the victim’s phone. I should keep this for later.”
+ : [Victim's Phone added to evidence]

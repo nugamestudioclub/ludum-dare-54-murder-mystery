@@ -1,0 +1,4 @@
+Detective: “Let’s check the victim's message history and other items. There’s...a message from the chef? It reads: ‘Hey, it might be weird to send this by text, but please talk with me privately at 8:00.’ That’s awfully close to the murder time.”
+Detective: “Wait, there’s another note. Bank account transferral of $100,000 at 6:00? That’s a lot of money... not to mention, right before she died? Something’s off about this.”
+ : [Chef’s Text added to evidence]
+ : [Bank Statement added to evidence]

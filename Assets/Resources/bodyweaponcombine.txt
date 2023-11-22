@@ -1,0 +1,4 @@
+Detective: “This knife matches the wounds on the body. It’s clearly the murder weapon."
+Detective: "Oh, right! I should take a look at the autopsy I was given.”
+Detective: “Let’s see… the victim was a 20-something year old female. She died at around 8:30 PM from several stab wounds on the right side of the chest. Official cause of death: blood loss.”
+ : [Autopsy Report added to evidence]

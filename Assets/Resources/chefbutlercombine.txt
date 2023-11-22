@@ -1,0 +1,2 @@
+Detective: “Hm... The butler couldn’t have been in the kitchen if the chef was there alone, and at this point I doubt the chef is lying.”
+ : [Butler's Testimony updated]

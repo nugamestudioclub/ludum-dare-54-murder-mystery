@@ -1,0 +1,7 @@
+Detective: “Chef, you said no one else was here during cleanup, but the eldest sibling was here, wasn't she?
+Chef: "Now that you mention it, yeah, she was! But still, it's a lot of work!"
+Detective: "I can imagine. She also mentioned that you left at some point, right?”
+Chef: “What? Uh, um...yes! I left to take a quick break, that’s all. I need to do something urgent on my phone now, so could you leave me alone for a second?”
+Detective: “Alright.”
+Detective: “(Urgent on his phone? That reminds me...)”
+ : [Chef’s Testimony updated]

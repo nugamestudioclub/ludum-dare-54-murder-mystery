@@ -1,0 +1,3 @@
+Detective: “The victim died at 8:30 in the living room due to being stabbed by the knife. The killer wielded it to kill the victim.
+Detective: "The cousin cannot have committed the crime due to his condition, which renders him unable to wield the knife."
+Detective: "The butler and the eldest sibling were speaking to each other at the time."

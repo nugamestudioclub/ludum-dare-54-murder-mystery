@@ -1,0 +1,2 @@
+Detective: “Since we know that the butler and eldest sister were conversing privately, and the chef was busy in the kitchen, this implies that the middle sibling arrived to help clean either before or after the murder, but wasn’t in the dining room nor the kitchen during. Therefore, the middle sibling has the perfect opportunity to commit the crime!"
+ : [Detective's Accusation added to evidence]

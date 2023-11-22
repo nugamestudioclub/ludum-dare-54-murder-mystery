@@ -1,0 +1,17 @@
+Eldest Sibling: …
+Detective: “Hello, are you the older sibling of the victim?” 
+Eldest Sibling: “Yes, that’s me.”
+Detective: “(Wow, that’s cold. She doesn’t even seem upset about the murder.)" 
+Detective: "Might I ask you what you were doing tonight at the time of the murder?”
+Eldest Sibling: “Well, the will was read, after which I took it with me to discuss the inheritance with my younger brother." 
+Eldest Sibling: "I then went to the kitchen to help the chef clean up at about 8:00. Since I live separately now, it’s a habit of mine to help clean up, so it was more for me than for the chef."
+Eldest Sibling: "He left and came back maybe half an hour later. I went back to the dining room to talk with my younger brother, though I don’t remember when.”
+Detective: “Do you happen to still have the will on you?”
+Eldest Sibling: “Yes, feel free to look at it. It’s not worth that much now.”
+Detective: “I see. Why is that?”
+Eldest Sibling: “Well, most of the inheritance went to the youngest in our family. A nonsensical decision, given how irresponsible they are, which was somewhat frustrating. As you can guess, most of the money is being redistributed.”
+Detective: “Can I take the will?”
+Eldest Sibling: “Sure.”
+Detective: “(A will with proceedings going to the youngest, and potentially most irresponsible? Strange, I feel like there’s a reason for this.)"
+ : [Last Will added to evidence]
+ : [Eldest’s Testimony added to evidence]

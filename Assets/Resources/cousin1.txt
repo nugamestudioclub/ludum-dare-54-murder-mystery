@@ -1,0 +1,16 @@
+Detective: “It says here that you called for help upon finding the victim in the living room. Is this true?”
+Cousin: “Yes! You know, I came back inside and then I heard a loud sound and then she was just lying on the ground and there was a lot of blood!! And then I panicked and then there was a lot of blood and…”
+Detective: “Okay, I got it. Did you see anyone before you entered?”
+Cousin: “No! I mean, yes? I mean, I’m not sure!! I didn’t realize something was wrong until I saw the body, so I wasn’t paying attention! After all, I didn’t know it was a murder at all.”
+Detective: “I see.”
+Detective: “So what exactly were you doing during this time?
+Cousin: “Well, we all came today to attend the reading of the will.”
+Detective: “Will?”
+Cousin: “My aunt and uncle died recently. There were only a few of us expected to receive anything, so most people didn’t come. I didn’t expect much myself, but I figured I should come anyway, out of respect.”
+Cousin: “Anyway, at some point, the will read that only the children were supposed to hear the last part, so I left. I ended up going outside to relax, and also to take my medication."
+Cousin: "I have Parkinson’s, so without medication I can’t even hold so much as a fork. Since I wasn’t hungry either, I decided to stay outside for a while. Then I discovered that the pharmacy had sent me the wrong medication! See?"
+Detective: “(The email on his phone does indeed say they sent him the wrong meds.)”
+Cousin: “After taking a nap, I went back inside, and then, you know, they died. Ohhhh, man…”
+Detective: “Thank you. I might talk to you later.”
+Detective: “(Hmmm. He can’t hold things properly without meds...)”
+ : [Cousin’s Condition added to evidence]

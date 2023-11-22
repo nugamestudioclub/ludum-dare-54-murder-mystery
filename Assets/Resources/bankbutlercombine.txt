@@ -1,0 +1,3 @@
+Detective: “This isn’t a perfect match by any means, but the butler would have interacted with the victim at 6:00, during the money transfer."
+Detective: "It’s incredibly likely that he was around when she completed the transfer.”
+ : [Butler’s Blackmail added to the evidence]

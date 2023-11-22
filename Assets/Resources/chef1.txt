@@ -1,0 +1,6 @@
+Detective: “Hello, are you the chef here?”
+Chef: “Yeah, that’s me. Why do you ask?”
+Detective: “What exactly were you doing leading up until now?”
+Chef: “Well, what does it look like? I’m a chef, it makes sense that a chef would be either cookin’ or cleanin’! I’ve been cookin’ by myself until dinner, and cleanin’ by myself in the kitchen for the rest of it!”
+Detective: “(Hm... something isn’t adding up. Wasn’t someone else in the kitchen at one point?)”
+ : [Chef's Testimony added to evidence]

@@ -1,0 +1,5 @@
+Detective: “The eldest sibling just talked to me about this second meeting of yours. You two were speaking at around 8:30, is that correct?”
+Butler: “Yes, that is correct. At about 8:30, she and I met privately to discuss future employment, especially given my… situation.”
+Detective: “(Wait. If this means the butler and eldest sibling were together at 8:30...then... only one person is unaccounted for.)” 
+Detective: “(I need to review everything I've figured out so far...)”
+ : [Detective's Deductions added to evidence]

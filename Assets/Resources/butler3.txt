@@ -1,0 +1,14 @@
+Detective: “I think there’s another reason why you didn’t want to tell me about the meeting. I think you were blackmailing the victim.”
+Butler: “Blackmailing? But- why?!”
+Detective: “There was a suspicious transfer of a large sum of money around six from the victim to someone’s bank account. Given that all other people present have alibis for the time, combined with your so-called ‘meeting’, there isn’t much room for debate.”
+Butler: “What...I...  Fine. Yes, I’ve been blackmailing her.”
+Detective: “Mind explaining why? You look incredibly suspicious having blackmailed the victim, while also having met up with them.”
+Butler: “I come from a poor family. With no education, a job as well-paying like this was a miracle back when I first was looking for employment.”
+Butler: “But the youngest, she liked to gamble and drink, perhaps even to the point of addiction. The money being siphoned from those expenses meant we got paid less, and I couldn’t afford basic necessities for my family.”
+Butler: “So I did what I had to. I blackmailed her by threatening to expose her addiction to her parents. She agreed, up until now, when the will bequeathed most of the money to her." 
+Butler: "With no motive to agree with my blackmail, I made a desperate plea to continue my employment. That was the meeting.”
+Butler: “Of course, she fired me. Who wouldn’t? I wasn't inclined to irritate her more, so I left to continue my last day of work."
+Butler: "I served dinner, then cleaned up the living room, and the middle sibling joined me later.”
+Detective: “(As rough as this sounds, this does explain everything before dinner. Now it seems unlikely that the butler is responsible for the murder...)"
+Detective: "(As long as I confirm this testimony with someone else.)”
+ : [Butler’s Truth added to the evidence list]
