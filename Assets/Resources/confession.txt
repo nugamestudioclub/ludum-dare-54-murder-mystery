@@ -1,0 +1,19 @@
+Detective: “I must ask you again. Where were you at the time of the murder?”
+Middle Sibling: “...I thought I already told you… I was helping the butler clean at the time…”
+Detective: “That’s a blatant lie, since the butler and your older sister were conversing together, and you were not around!”
+Middle Sibling: “W-Well, they might not have noticed I was around!”
+Detective: “Unfortunately, that isn’t possible, as they were speaking about something highly confidential and would have checked their surroundings beforehand! Additionally, this leaves you without any proof for your alibi!”
+Middle Sibling: “There’s no way everyone else was accounted for, so that doesn’t matter!”
+Detective: “On the contrary! Everyone else was accounted for, or unable to commit the murder! You are the only suspect without a solid alibi.”
+Middle Sibling: !
+Middle Sibling: “But why would I kill her! She was my little sister!”
+Detective: “Unfortunately, motive has very little to do with actual evidence. If you care to divulge, that’s an entirely separate matter.”
+Middle Sibling: “That’s… that’s…”
+Middle Sibling: “THAT’S NOT FAIR!”
+Detective: !
+Middle Sibling: “I’ve been dealing with her fooling around all this time! She’s been wasting all of our money, and our older sister is so much better with the business! She’s not even part of this family and she got the entire inheritance!! Don’t fool around with me!”
+Detective: (Wow… that’s some anger right there.)
+Middle Sibling: “AND WE NEVER GOT A REASON FOR IT! WHY DID MOM AND DAD STOP CARING ABOUT US! WE WERE HERE LONGER!”
+Detective: (So it is family grudges…)
+MIDDLE SIBLING: “... so why…?”
+Detective: (Looks like he’s not saying anything else…)

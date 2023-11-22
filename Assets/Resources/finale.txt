@@ -1,0 +1,4 @@
+Detective: “Yes, I have found the culprit.”
+Detective: (…)
+Detective: “Understood.”
+Detective: (Whew. It’s finally over.)
