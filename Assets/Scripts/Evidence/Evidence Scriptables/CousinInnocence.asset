@@ -9,11 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb99825caaca042f6a8cbebe2e564065, type: 3}
-  m_Name: MainComboSet
+  m_Script: {fileID: 11500000, guid: 2167e350df773c9438d2a1a03ea16b56, type: 3}
+  m_Name: CousinInnocence
   m_EditorClassIdentifier: 
-  allCombos:
-  - item1: Knife
-    item2: Photo
-    comboDesc: comboKnifePhoto
-    resultingEvidence: {fileID: 11400000, guid: d9c5c6254ea0d400ab99da7e459a9fad, type: 2}
+  itemName: Cousin's Innocence
+  itemSprite: {fileID: 21300000, guid: c23963184ea63460481ecccd4f853e8e, type: 3}
+  itemExamineFilename: cousinsinnocencedesc

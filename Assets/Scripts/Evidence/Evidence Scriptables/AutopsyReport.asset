@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2167e350df773c9438d2a1a03ea16b56, type: 3}
-  m_Name: Knife
+  m_Name: AutopsyReport
   m_EditorClassIdentifier: 
-  itemName: Knife
-  itemSprite: {fileID: 21300000, guid: 63e3b63b6f5924e0390814c96e6b0f8f, type: 3}
-  itemExamineFilename: weapondesc
+  itemName: Autopsy Report
+  itemSprite: {fileID: 21300000, guid: 80a900fc55b984d73830688c806c3d6a, type: 3}
+  itemExamineFilename: autopsydesc

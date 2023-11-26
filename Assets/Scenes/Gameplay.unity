@@ -1536,7 +1536,7 @@ GameObject:
   - component: {fileID: 541412432}
   - component: {fileID: 541412427}
   m_Layer: 0
-  m_Name: Interactable1
+  m_Name: MurderWeapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1681,12 +1681,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 541412426}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.71, y: -3.83, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.29000092, y: -3.83, z: 0}
   m_LocalScale: {x: 2.7853198, y: 2.7853198, z: 3.0948}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 674501446}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &541412432
 MonoBehaviour:
@@ -1810,6 +1810,10 @@ GameObject:
   m_Component:
   - component: {fileID: 618121695}
   - component: {fileID: 618121696}
+  - component: {fileID: 618121700}
+  - component: {fileID: 618121699}
+  - component: {fileID: 618121698}
+  - component: {fileID: 618121697}
   m_Layer: 0
   m_Name: CousinSprite
   m_TagString: Untagged
@@ -1884,6 +1888,113 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &618121697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 618121694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f00b142aac4059c44aef5e17052acacc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  evidence: {fileID: 11400000, guid: 35377b2a1a3414c7cb3d056d80e2a90d, type: 2}
+  interact: 1
+--- !u!114 &618121698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 618121694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d150c9522a6e74d54802639835bb608b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  filename: cousin1
+  postDialogueAction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 618121697}
+        m_TargetAssemblyTypeName: PickupBehavior, Assembly-CSharp
+        m_MethodName: PickUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &618121699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 618121694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c42b147f58ce0c14185e8287bb2f7d0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInRange: 0
+  interactKey: 101
+  interactAction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 618121698}
+        m_TargetAssemblyTypeName: DialogueBehavior, Assembly-CSharp
+        m_MethodName: doDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  textUI: {fileID: 1179986872}
+--- !u!58 &618121700
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 618121694}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.00000047683716, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.2
 --- !u!1 &628734900
 GameObject:
   m_ObjectHideFlags: 0
@@ -2031,6 +2142,7 @@ Transform:
   - {fileID: 1937301981}
   - {fileID: 618121695}
   - {fileID: 1021350656}
+  - {fileID: 541412431}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &730071299
@@ -2986,6 +3098,7 @@ GameObject:
   - component: {fileID: 1021350657}
   - component: {fileID: 1021350660}
   - component: {fileID: 1021350659}
+  - component: {fileID: 1021350661}
   m_Layer: 0
   m_Name: BodyOutline
   m_TagString: Untagged
@@ -3137,7 +3250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f00b142aac4059c44aef5e17052acacc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  evidence: {fileID: 0}
+  evidence: {fileID: 11400000, guid: 27a9652b215974a5a9e3da8c60fba327, type: 2}
   interact: 1
 --- !u!114 &1021350660
 MonoBehaviour:
@@ -3167,6 +3280,32 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1021350661}
+        m_TargetAssemblyTypeName: PickupBehavior, Assembly-CSharp
+        m_MethodName: PickUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1021350661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021350654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f00b142aac4059c44aef5e17052acacc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  evidence: {fileID: 11400000, guid: e13686574ec014350a1e925d0e27846b, type: 2}
+  interact: 1
 --- !u!1 &1027773722
 GameObject:
   m_ObjectHideFlags: 0
@@ -6515,6 +6654,5 @@ SceneRoots:
   - {fileID: 674501446}
   - {fileID: 1869342073}
   - {fileID: 800601407}
-  - {fileID: 541412431}
   - {fileID: 1604915874}
   - {fileID: 229394115}
