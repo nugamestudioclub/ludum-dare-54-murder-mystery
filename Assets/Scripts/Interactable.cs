@@ -24,11 +24,12 @@ public class Interactable : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isInRange && PlayerStateManager.stateManager.matches(PlayerState.FreeRoam))
+        if (isInRange && PlayerStateManager.stateManager.matches(PlayerState.FreeRoam) && this.isInteractable())
         {
             if (Input.GetKeyDown(interactKey)) {
                 interactAction.Invoke();
-                //textUI.SetActive(false);
+                textUI.SetActive(false);
+                interacted = true;
             }
         }
     }
@@ -37,7 +38,9 @@ public class Interactable : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            textUI.SetActive(true);
+            if (isInteractable()) {
+                textUI.SetActive(true);
+            }
             isInRange = true;
         }
     }
@@ -53,5 +56,9 @@ public class Interactable : MonoBehaviour
 
     private bool isInteractable() {
         return (repeatable || !interacted);
+    }
+
+    public void resetInteraction() {
+        interacted = false;
     }
 }

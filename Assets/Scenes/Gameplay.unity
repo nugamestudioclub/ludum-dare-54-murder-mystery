@@ -532,6 +532,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   textUI: {fileID: 1179986872}
+  repeatable: 0
 --- !u!58 &229394113
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1586,6 +1587,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   textUI: {fileID: 1179986872}
+  repeatable: 0
 --- !u!58 &541412429
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1962,6 +1964,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   textUI: {fileID: 1179986872}
+  repeatable: 1
 --- !u!58 &618121700
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2517,6 +2520,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   textUI: {fileID: 1179986872}
+  repeatable: 0
 --- !u!114 &800601404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3265,6 +3269,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   textUI: {fileID: 1179986872}
+  repeatable: 0
 --- !u!58 &1021350658
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5182,6 +5187,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   textUI: {fileID: 1179986872}
+  repeatable: 0
 --- !u!58 &1604915872
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5831,6 +5837,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   textUI: {fileID: 1179986872}
+  repeatable: 0
 --- !u!114 &1869342070
 MonoBehaviour:
   m_ObjectHideFlags: 0
