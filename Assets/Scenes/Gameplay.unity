@@ -532,6 +532,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   textUI: {fileID: 1179986872}
+  repeatable: 0
 --- !u!58 &229394113
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -908,8 +909,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 606cb16926bd946cba09d1e5a0973de4, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 2f3071450cb3e41e897e6c0f02c7f41a, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1586,6 +1587,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   textUI: {fileID: 1179986872}
+  repeatable: 0
 --- !u!58 &541412429
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1962,6 +1964,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   textUI: {fileID: 1179986872}
+  repeatable: 0
 --- !u!58 &618121700
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2517,6 +2520,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   textUI: {fileID: 1179986872}
+  repeatable: 0
 --- !u!114 &800601404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2910,8 +2914,8 @@ MonoBehaviour:
     eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
     in culpa qui officia deserunt mollit anim id est laborum.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3b2edbcec92244868a5d579b3ebed226, type: 2}
+  m_sharedMaterial: {fileID: -25877563891550711, guid: 3b2edbcec92244868a5d579b3ebed226, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3265,6 +3269,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   textUI: {fileID: 1179986872}
+  repeatable: 0
 --- !u!58 &1021350658
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5182,6 +5187,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   textUI: {fileID: 1179986872}
+  repeatable: 0
 --- !u!58 &1604915872
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5343,8 +5349,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Name
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3b2edbcec92244868a5d579b3ebed226, type: 2}
+  m_sharedMaterial: {fileID: -25877563891550711, guid: 3b2edbcec92244868a5d579b3ebed226, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5831,6 +5837,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   textUI: {fileID: 1179986872}
+  repeatable: 0
 --- !u!114 &1869342070
 MonoBehaviour:
   m_ObjectHideFlags: 0
