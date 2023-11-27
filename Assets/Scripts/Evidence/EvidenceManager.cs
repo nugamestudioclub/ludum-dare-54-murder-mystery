@@ -164,4 +164,14 @@ public class EvidenceManager : MonoBehaviour
     {
        // Debug.Log(currentEvidence.GetQuestion());
     }
+
+    public bool hasEvidenceNamed(string targetName) {
+        foreach (Evidence evidence in evidenceCollected)
+        {
+            if (evidence.itemName == targetName) {
+                return true;
+            }
+        }
+        return false;
+    }
 }

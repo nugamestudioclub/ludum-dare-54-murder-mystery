@@ -11,9 +11,14 @@ public class Interactable : MonoBehaviour
     [SerializeField] private UnityEvent interactAction;
     [SerializeField] private GameObject textUI;
 
+    [SerializeField] private bool repeatable;
+
+    private bool interacted;
+
     private void Start()
     {
         textUI.SetActive(false);
+        interacted = false;
     }
 
     // Update is called once per frame
@@ -44,5 +49,9 @@ public class Interactable : MonoBehaviour
             isInRange = false;
             textUI.SetActive(false);
         }
+    }
+
+    private bool isInteractable() {
+        return (repeatable || !interacted);
     }
 }
