@@ -50,5 +50,11 @@ public class ComboSet : ScriptableObject
         }
         return null;
     }
+
+    public void replenishAllCombos() {
+        foreach (EvidenceCombo combo in allCombos) {
+            combo.expended = false;
+        }
+    }
 }
  

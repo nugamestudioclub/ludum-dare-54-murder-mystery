@@ -50,7 +50,9 @@ public class Interactable : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             isInRange = false;
-            textUI.SetActive(false);
+            if (textUI.activeSelf) {
+                textUI.SetActive(false);
+            }
         }
     }
 

@@ -28,6 +28,7 @@ public class EvidenceManager : MonoBehaviour
         inventory.SetActive(false);
         isOpen = false;
         itemNamesSelected = new List<string>();
+        comboSet.replenishAllCombos();
     }
 
     private void Update()

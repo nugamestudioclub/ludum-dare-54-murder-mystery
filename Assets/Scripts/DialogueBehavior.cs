@@ -10,6 +10,12 @@ public class DialogueBehavior : MonoBehaviour
     [SerializeField]
     private UnityEvent postDialogueAction;
 
+    public static void doGivenDialogue(string givenName) {
+        if (!PlayerStateManager.stateManager.matches(PlayerState.Dialogue)) {
+            DialogueSequence.dialogue.doSequence(givenName);
+        }
+    }
+
     public void doDialogue() {
         if (!PlayerStateManager.stateManager.matches(PlayerState.Dialogue)) {
             DialogueSequence.dialogue.doSequence(filename);
