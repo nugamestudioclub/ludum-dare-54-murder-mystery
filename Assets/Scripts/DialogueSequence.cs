@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class DialogueSequence : MonoBehaviour
 {
@@ -25,6 +26,8 @@ public class DialogueSequence : MonoBehaviour
     private bool activationFrame = false;
     private bool deactivationFrame = false;
     private PlayerState originState;
+
+    private UnityEvent storedPostDialogueAction;
 
     private void Awake() {
         dialogue = this;
@@ -64,6 +67,11 @@ public class DialogueSequence : MonoBehaviour
     private void endDialogue() {
         dialoguePanel.SetActive(false);
         deactivationFrame = true;
+        if (storedPostDialogueAction != null)
+        {
+            storedPostDialogueAction.Invoke();
+            storedPostDialogueAction = null;
+        }
     }
 
     public void doSequence(string filename) {
@@ -77,5 +85,11 @@ public class DialogueSequence : MonoBehaviour
         textIndex = 0;
         updateDialogue();
         activationFrame = true;
+    }
+
+    public void doSequence(string filename, UnityEvent postDialogueAction)
+    {
+        doSequence(filename);
+        storedPostDialogueAction = postDialogueAction;
     }
 }

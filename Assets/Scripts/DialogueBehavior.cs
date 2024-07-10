@@ -8,6 +8,8 @@ public class DialogueBehavior : MonoBehaviour
     [SerializeField]
     private string filename;
     [SerializeField]
+    private UnityEvent onDialogueAction;
+    [SerializeField]
     private UnityEvent postDialogueAction;
 
     public static void doGivenDialogue(string givenName) {
@@ -18,10 +20,19 @@ public class DialogueBehavior : MonoBehaviour
 
     public void doDialogue() {
         if (!PlayerStateManager.stateManager.matches(PlayerState.Dialogue)) {
-            DialogueSequence.dialogue.doSequence(filename);
-            if (postDialogueAction != null) {
+
+            if (postDialogueAction == null)
+            {
+                DialogueSequence.dialogue.doSequence(filename);
+            }
+            else
+            {
+                DialogueSequence.dialogue.doSequence(filename, postDialogueAction);
+            }
+
+            if (onDialogueAction != null) {
                 Debug.Log("post dialogue action done");
-                postDialogueAction.Invoke();
+                onDialogueAction.Invoke();
             }
         }
     }
